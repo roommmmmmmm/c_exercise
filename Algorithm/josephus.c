@@ -1,7 +1,7 @@
 #include <stdio.h>
 int Q[100];
 int Head,Tail,Number_of_Items = 0;
-
+//入队
 void Enqueue(int x) {
   if (Number_of_Items == 0) {
     Head =Tail= 0;
@@ -12,6 +12,7 @@ void Enqueue(int x) {
   }
   Number_of_Items++;
 }
+//出队
 int Dequeue() {
   int z;
   z = Q[Head];
