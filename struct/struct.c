@@ -9,7 +9,10 @@ struct superman{
 
 int main(){
 	struct superman girl = {"Black Widow",18,20000,"SM"};
+	struct superman *p = &girl;
 	printf("name is %s \n",girl.name);
+	printf("name is %s \n",p[0].name);
+	printf("name is %s \n",p[1].name);
 	struct superman boy[2] = {
 		{"Captain",100,5000,"shield"},
 		{"Iron Man",30,15000,"fly"}
